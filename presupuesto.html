@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">THE WATCHER</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Solicitar Presupuesto</h2>
+
+    <section id="budget">        
+        <form id="budget-form">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto">
+                    <option>Seleccione un producto</option>
+                    <option value="producto1">Reloj An/Dig Hombre AW-590-1A G-Shock</option>
+                    <option value="producto2">Reloj Casio Mujer LTP-1303D-7A Plateado</option>
+                    <option value="producto3">Reloj Casio Hombre MW-610H-1A Negro</option>
+                    <option value="producto4">Reloj Análogo Mujer Casio Ltp-1308D-9A</option>
+                    <option value="producto5">Reloj Análogo Mujer Casio Ltp-Vt01D-7B</option>
+                    <option value="producto6">Reloj Análogo Mujer Casio Ltp-1275G-9A</option>
+                    <option value="producto7">Reloj Hombre Aerostar 2351102</option>
+                    <option value="producto8">Reloj Hombre Aerostar 2354102</option>
+                </select>
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" name="plazo" min="1" max="12">
+                <label for="extras">Extras:</label>
+                <input type="checkbox" id="extra1" name="extras" value="extra1"> Brazalete de Acero Inoxidable<br>
+                <input type="checkbox" id="extra2" name="extras" value="extra2"> Porta Relojes<br>
+                <input type="checkbox" id="extra3" name="extras" value="extra3"> Anillo de Acero Inoxidable<br>
+                <p>Total Presupuesto: <span id="total"></span></p>
+            </fieldset>
+            <label>
+                <input type="checkbox" id="condiciones"> Acepto las condiciones de privacidad
+            </label>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </section>
+
+    <footer class="footer-fix">
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/x.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>Dirección: C/ Marqués del Nervión, 78, 41005 Sevilla, España</p>
+        <p>&copy; 2024 The Watcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

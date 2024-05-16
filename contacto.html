@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIN_v6SGsF9BdYCeVUZTtgq5GgDXeKlm0&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">THE WATCHER</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form class="contact-form" id="route-form">
+            <label for="address">Ingresa tu dirección:</label>
+            <input class="contact-input" type="text" id="address" name="contact-address" placeholder="Tu dirección">
+            <button class="contact-button" type="contact-submit">Mostrar Ruta</button>
+        </form>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+        <p>Dirección: C/ Marqués del Nervión, 78, 41005 Sevilla, España</p>
+        <p>Teléfono: +34 912 45 20 33</p>
+        <p>Email: the_watcher@gmail.com</p>
+    </section>
+
+    <footer class="footer-fix">
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/x.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>Dirección: C/ Marqués del Nervión, 78, 41005 Sevilla, España</p>
+        <p>&copy; 2024 The Watcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/map.js"></script>
+</body>
+</html>
